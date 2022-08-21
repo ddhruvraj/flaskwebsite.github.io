@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            background-image: url(backimg_frame.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(238, 141, 84);
+        }
+        .div{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(68, 175, 175);
+            color: black;
+            text-align:center;
+            padding-top: 10px;
+        }
+        .btn{
+            background-color: rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn1{
+            float: right;
+            background-color: rgb(68, 175, 175);
+            width: 90px;
+            height: 40px;
+        }
+        .btn3{
+            background-color: rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn:hover{
+            background-color:white ;
+            color: black;
+        }
+        .btn1:hover{
+            background-color:white ;
+            color: black;
+        }
+        .btn3:hover{
+            background-color:white ;
+            color: black;
+        }
+        .font{
+            color: rgb(68, 175, 175);
+        }
+        #table{
+            border: 1px solid rgb(179, 255, 0);
+            color: violet;
+            font-size: 30px;
+        }
+        tr:hover{
+            background-color: rgb(79, 116, 117);
+        }
+        .note{
+            background-color: rgb(255, 182, 113);
+            color: black;
+            width: 800px;
+            height : 100px;
+            border-radius: 10px;
+            font-size: 25px;
+            margin-bottom: -10px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body id="main">
+    <div class="div">
+         <h1>CSS Selectors
+        </h1>
+    </div><br>
+    <a href="syntax.html"><button class="btn">&lt; Previous</button></a>
+    <a href="howto.html">    <button class="btn1">Next&gt;</button>
+    </a>    <hr>
+   <center>
+    <h2 class="font">
+        A CSS selector selects the HTML element(s) you want to style.
+    </h2>
+    
+   </center>
+  
+    <hr>
+    <h2 class="font">CSS Selectors
+    </h2>
+    <h3>
+        CSS selectors are used to "find" (or select) the HTML elements you want to style.
+    </h3>
+    <h3>
+        We can divide CSS selectors into five categories:
+    </h3>
+   <ul>
+       <li> 
+        <h3>
+            Simple selectors (select elements based on name, id, class)
+       </h3>
+       </li>
+       <li> 
+           <h3>
+               Combinator selectors (select elements based on a specific relationship between them)
+           </h3>
+        </li>
+        <li>
+            <h3>
+                Pseudo-class selectors (select elements based on a certain state)
+            </h3>
+        </li>
+        <li>
+            <h3>
+                Pseudo-elements selectors (select and style a part of an element)
+            </h3>
+        </li>
+        <li>
+            <h3>
+                Attribute selectors (select elements based on an attribute or attribute value)
+            </h3>
+        </li>
+   </ul>
+   <h3>
+    This page will explain the most basic CSS selectors.
+   </h3>
+   <hr>
+   <h2 class="font">
+    The CSS element Selector
+   </h2>
+   <h3>
+    The element selector selects HTML elements based on the element name.
+   </h3>
+    <img src="2_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/html/3xmsx22vd">    <button class="btn3">Try it Yourself</button>
+    </a><hr>
+    <h2 class="font">
+        The CSS id Selector
+    </h2>
+    <ul>
+        <li>
+            <h3>
+                The id selector uses the id attribute of an HTML element to select a specific element.
+            </h3>
+        </li>
+        <li>
+            <h3>
+                The id of an element is unique within a page, so the id selector is used to select one unique element!
+            </h3>
+        </li>
+        <li>
+            <h3>
+                To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+            </h3>
+        </li>
+    </ul>
+    <img src="3_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/html/3xmsx483j">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <br><br>
+    <div class="note"> 
+        <p>
+            <font style="font-weight: bolder;"">Note</font>: An id name cannot start with a number!
+        </p>
+    </div>
+    <br>
+    
+    
+    <hr>
+    <h2 class="font">
+        The CSS class Selector
+    </h2>
+    <ul>
+       <h3> 
+           <li>
+            The class selector selects HTML elements with a specific class attribute.
+           </li>
+       </h3>
+        <h3><li>To select elements with a specific class, write a period (.) character, followed by the class name.
+        </li></h3>
+    </ul>
+    <img src="4_img.png" alt=""> 
+    <br><br><a href="https://onecompiler.com/html/3xmsx5rr9">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <h3>
+        You can also specify that only specific HTML elements should be affected by a class.
+    </h3>
+    <img src="5_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/html/3xmsx7q49">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <h3>
+        HTML elements can also refer to more than one class.
+    </h3>
+    <img src="6_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/html/3xmsx96vz">    <button class="btn3">Try it Yourself</button>
+    </a><br><br>
+    <div class="note"> 
+        <p>
+            <font style="font-weight: bolder;"">Note</font>: A class name cannot start with a number!
+        </p>
+    </div>
+    <br>
+    <hr>
+    <h2 class="font">
+        The CSS Universal Selector
+    </h2>
+    <h3>The universal selector (*) selects all HTML elements on the page.
+    </h3>
+    <img src="7_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/html/3xmsxadn6">    <button class="btn3">Try it Yourself</button>
+    </a><hr>
+    <h2 class="font">
+        The CSS Grouping Selector
+    </h2>
+    <ul>
+     <h3>  
+          <li>
+            The grouping selector selects all the HTML elements with the same style definitions.
+            </li>
+    </h3>
+      <h3>  <li> 
+        Look at the following CSS code (the h1, h2, and p elements have the same style definitions):
+    </li></h3>
+       
+    </ul>
+    
+    <img src="8_img.png" alt="">
+    <br><br>
+    <h3>It will be better to group the selectors, to minimize the code.
+    </h3>
+    <h3>To group selectors, separate each selector with a comma.</h3>
+   
+    <img src="9_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/html/3xmsxcrzq">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>
+    <table id="table">
+        <tr >
+            <th>
+                Selector		
+            </th>
+            <th>
+                Example	
+            </th>
+            <th>
+                Example description
+            </th>
+        </tr>
+        <tr>
+            <td>
+                #id	
+            </td>
+            <td>
+                #firstname	
+            </td>
+            <td>
+                Selects the element with id="firstname"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                .class
+            </td>
+            <td>
+                .intro	
+            </td>
+            <td>
+                Selects all elements with class="intro"
+            </td>
+        </tr>
+     <tr>
+         <td>
+             element.class
+         </td>
+         <td>
+            p.intro	
+         </td>
+         <td>
+            Selects only &lt;p&gt; elements with class="intro"
+         </td>
+     </tr>
+     <tr>
+         <td>
+             *
+         </td>
+         <td>
+             *
+         </td>
+         <td>
+            Selects all elements
+         </td>
+     </tr>
+     <tr>
+         <td>
+             element
+         </td>
+         <td>
+            p
+        </td>
+        <td>
+            Selects all &lt;p&gt; elements
+        </td>
+     </tr>
+     <tr>
+         <td>
+             element,element,..	
+         </td>
+         <td>
+            div,p
+        </td>
+        <td>
+            Selects all &lt;div&gt; elements and all &lt;pgt; elements
+        </td>
+    </tr>
+     
+    </table>
+    <hr>  <a href="syntax.html"><button class="btn">&lt; Previous</button></a>
+    <a href="howto.html">    <button class="btn1">Next&gt;</button>
+    </a> 
+</body>
+</html>

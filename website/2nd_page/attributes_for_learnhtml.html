@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #main{
+            background-image: url(backimg_frame.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(238, 141, 84);
+        }
+        .div{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(68, 175, 175);
+            color: black;
+            text-align:center;
+            padding-top: 10px;
+        }
+        .font{
+            color:rgb(68, 175, 175);
+        }
+        .btn{
+            background-color:rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn1{
+            float: right;
+            background-color:rgb(68, 175, 175);
+            width: 90px;
+            height: 40px;
+        }
+        .btn3{
+            background-color:rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: black;
+        } .btn1:hover{
+            background-color: white;
+            color: black;
+        }
+     .btn3:hover{
+            background-color: white;
+            color: black;
+        }
+        .red{
+            color:white;
+        }
+    </style>
+</head>
+<body id="main">
+    <div class="div">
+        <h1>
+            HTML Attributes
+        </h1>
+    </div><br>
+    <a href="basic.html"><button class="btn">&lt; Previous</button></a>
+    <a href="heading.html"><button class="btn1">Next&gt;</button></a><br><br>
+    <hr>
+    <center>
+        <h2 class="font">
+            HTML attributes provide additional information about HTML elements.
+
+        </h2>
+    </center>
+    <hr>
+    <h2 class="font">HTML Attributes
+    </h2>
+    <ul>
+        <li><h3>All HTML elements can have attributes
+        </h3></li>
+        <li><h3>Attributes provide additional information about elements
+        </h3></li>
+        <li><h3>Attributes are always specified in the start tag
+        </h3></li>
+        <li><h3>Attributes usually come in name/value pairs like: name="value"
+        </h3></li>
+
+    </ul>
+    <hr>
+    <h2 class="font">The href Attribute
+    </h2>
+    <h3>
+        The <font class="red">&lt;a&gt;</font> tag defines a hyperlink. The <font class="red">href</font> attribute specifies the URL of the page the link goes to:
+    </h3>
+    <img src="href_ex_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/html/3xmsk3gjc">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>
+    <h2 class="font">The src Attribute
+    </h2>
+    <h3>
+        The <font class="red">&lt;img&gt;</font> tag is used to embed an image in an HTML page. The <font class="red">src</font> attribute specifies the path to the image to be displayed:
+    </h3>
+    <img src="img_ex_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/html/3xmsk9nek">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <h2 class="font">
+        There are two ways to specify the URL in the <font class="red">src</font> attribute:
+    </h2>
+    <ol>
+        <li><h3>
+            <font style="font-weight: bolder;">Absolute URL</font> - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+            <br><br>
+            <font style="font-weight: bolder;">Notes</font>: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+        </h3></li>
+        <li><h3>
+            <font style="font-weight: bolder;">Relative URL</font> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+            <br><br>
+            <font style="font-weight: bolder;">Tip</font>: It is almost always best to use relative URLs. They will not break if you change domain.
+        </h3></li>
+    </ol>
+    <hr>
+    <h2 class="font">The width and height Attributes
+    </h2>
+    <h3>
+        The <font class="red">&lt;img&gt;</font> tag should also contain the <font class="red">width</font> and <font class="red">height</font> attributes, which specifies the width and height of the image (in pixels):
+    </h3>
+    <img src="wid_hig_ex_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/html/3xmskbdmt">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>
+    <h2 class="font">The alt Attribute
+    </h2>
+    <h3>The required <font class="red">alt</font> attribute for the <font class="red">&lt;img&gt;</font> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the <font class="red">src</font> attribute, or if the user uses a screen reader.
+    </h3>
+    <img src="alt1_ex_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/html/3xmskcmwc">    <button class="btn3">Try it Yourself</button>
+    </a><br><br>
+    <img src="alt2_ex_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/html/3xmskdwcz">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>
+    <h2 class="font">
+        The style Attribute
+    </h2>
+    <h3>
+        The <font class="red">style</font> attribute is used to add styles to an element, such as color, font, size, and more.
+    </h3>
+    <img src="sty_ex_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/html/3xmskg259">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>
+    <h2 class="font">
+        The lang Attribute
+    </h2>
+    <h3>
+        You should always include the <font class="red">lang</font> attribute inside the <font class="red">&lt;html&gt;</font> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+    </h3>
+    <br>
+    <h3>
+        The following example specifies English as the language:
+    </h3>
+    <img src="lang1_ex_img.png" alt="">
+    <h3>Country codes can also be added to the language code in the <font class="red">lang</font> attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.</h3><br>
+    <h3>
+        The following example specifies English as the language and United States as the country:
+    </h3>
+    <img src="lang2_ex_img.png" alt="">
+    <hr>
+    <h2 class="font">The title Attribute
+    </h2>
+    <h3>The <font class="red"> title</font> attribute defines some extra information about an element.
+
+    </h3>
+    <h3>The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+
+    </h3>
+    <img src="title_ex_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/html/3xmskj4dz">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>
+    <h2 class="font">
+        Chapter Summary
+    </h2>
+    <ul>
+        <li><h3>All HTML elements can have attributes
+        </h3></li>
+        <li><h3>The <font class="red">href</font> attribute of <font class="red">&lt;a&gt;</font> specifies the URL of the page the link goes to
+        </h3></li>
+        <li><h3>The <font class="red">src</font> attribute of <font class="red">&lt;img&gt;</font> specifies the path to the image to be displayed
+        </h3></li>
+        <li><h3>The <font class="red">width</font> and <font class="red">height</font> attributes of <font class="red">&lt;img&gt;</font> provide size information for images
+        </h3></li>
+        <li><h3>The <font class="red">alt</font> attribute of <font class="red">&lt;img&gt;</font> provides an alternate text for an image
+        </h3></li>
+        <li><h3>The <font class="red">style</font> attribute is used to add styles to an element, such as color, font, size, and more
+        </h3></li>
+        <li><h3>The <font class="red">lang</font> attribute of the <font class="red">&lt;html&gt;</font> tag declares the language of the Web page
+        </h3></li>
+        <li><h3>The <font class="red">title</font> attribute defines some extra information about an element
+        </h3></li>
+    </ul>
+    <hr> <a href="basic.html"><button class="btn">&lt; Previous</button></a>
+    <a href="heading.html"><button class="btn1">Next&gt;</button></a>
+</body>
+</html>

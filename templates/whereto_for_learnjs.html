@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #main{
+            background-image: url(static/backimg_frame.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(238, 141, 84);
+        }
+        .div{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(68, 175, 175);
+            color: black;
+            text-align:center;
+            padding-top: 10px;
+        }
+        .font{
+            color:rgb(68, 175, 175);
+        }
+        .btn{
+            background-color: rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn1{
+            float: right;
+            background-color: rgb(68, 175, 175);
+            width: 90px;
+            height: 40px;
+        }
+        .btn3{
+            background-color: rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn:hover{
+            background-color:white ;
+            color: black;
+        }
+        .btn1:hover{
+            background-color:white ;
+            color: black;
+        }
+        .btn3:hover{
+            background-color:white ;
+            color: black;
+        }
+        /* .img{
+            width: 700px; ;
+            height: 400px;
+        }
+        .img2{
+            width: 700px; ;
+            height: 200px;
+        } */
+        .note2{
+            background-color: rgb(255, 182, 113);
+            color: black;
+            width: 1000px;
+            height : 130px;
+            border-radius: 10px;
+            font-size: 25px;
+            margin-bottom: -10px;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+        .note3{
+            background-color: rgb(255, 182, 113);
+            color: black;
+            width: 1000px;
+            height : 80px;
+            border-radius: 10px;
+            font-size: 25px;
+            margin-bottom: -10px;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body id="main">
+ <div class="div">   <h1>JavaScript Where To
+</h1></div>
+ <br>
+    <a href=intro_js><button class="btn">&lt; Previous</button></a>
+    <a href=output_js><button class="btn1">Next&gt;</button></a><br><br>
+    <hr>
+    <h2 class="font">The &lt;script&gt; Tag
+    </h2>
+    <h3>
+        In HTML, JavaScript code is inserted between <font class="red">&lt;script&gt;</font> and <font class="red">&lt;/script&gt;</font> tags.
+    </h3>
+    <img src="static\image_for_js\6_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a><br><br>
+    <div class="note2"> 
+        <p>
+            Old JavaScript examples may use a type attribute: &lt;script type="text/javascript"&gt;<div class="br"></div>
+                The type attribute is not required. JavaScript is the default scripting language in HTML.
+        </p>
+       
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="font">JavaScript Functions and Events
+    </h2>
+    <h3>A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+    </h3>
+    <h3>For example, a function can be called when an event occurs, like when the user clicks a button.
+    </h3>
+    <hr>
+    <h2 class="font">
+        JavaScript in &lt;head&gt; or &lt;body&gt;
+    </h2>
+    <h3>You can place any number of scripts in an HTML document.
+    </h3>
+    <h3>Scripts can be placed in the &lt;body&gt;, or in the &lt;head&gt; section of an HTML page, or in both.
+    </h3>
+    <hr>
+    <h2 class="font">
+        JavaScript in &lt;head&gt;
+    </h2>
+    <h3>In this example, a JavaScript function is placed in the &lt;head&gt; section of an HTML page.
+    </h3>
+    <h3>
+        The function is invoked (called) when a button is clicked:
+    </h3>
+    <img src="static\image_for_js\7_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/html/3xmsz862y">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>
+    <h2 class="font">
+        JavaScript in &lt;body&gt;
+    </h2>
+    <h3>In this example, a JavaScript function is placed in the &lt;body&gt; section of an HTML page.
+    </h3>
+    <h3>
+        The function is invoked (called) when a button is clicked:
+    </h3>
+    <img src="static\image_for_js\8_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/html/3xmszn8a3">    <button class="btn3">Try it Yourself</button>
+    </a><br><br>
+    <div class="note2"> 
+        <p>
+            Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.
+
+
+        </p>
+       
+    </div>
+    <br>
+    <hr>
+    <h2 class="font">
+        External JavaScript
+    </h2>
+    <img src="static\image_for_js\9_img.png" alt=""><br><br>
+    <h3>External scripts are practical when the same code is used in many different web pages.
+    </h3>
+    <h3>JavaScript files have the file extension .js.
+    </h3>
+    <h3>To use an external script, put the name of the script file in the src (source) attribute of a &lt;script&gt;tag:
+    </h3>
+    <img src="static\image_for_js\10_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <h3>You can place an external script reference in &lt;head&gt; or &lt;body&gt; as you like.
+    </h3>
+    <h3>The script will behave as if it was located exactly where the &lt;script&gt; tag is located.
+    </h3>
+    <br><br>
+    <div class="note3"> 
+        <p>
+            External scripts cannot contain &lt;script&gt; tags.
+        </p>
+       
+    </div>
+    <br>
+    <hr>
+    <h2 class="font">External JavaScript Advantages
+    </h2>
+    <h3>Placing scripts in external files has some advantages:
+    </h3>
+    <ul>
+        <li>
+            <h3>
+                It separates HTML and code
+            </h3>
+        </li>
+        <li>
+            <h3>
+                It makes HTML and JavaScript easier to read and maintain
+            </h3> 
+        </li>
+        <li>
+            <h3>
+                Cached JavaScript files can speed up page loads
+            </h3>
+        </li>
+    </ul>
+    <h3>To add several script files to one page  - use several script tags:
+    </h3>
+    <img src="static\image_for_js\11_img.png" alt=""><br><br>
+    <hr>
+    <h2 class="font">External References
+    </h2>
+    <h3>An external script can be referenced in 3 different ways:
+    </h3>
+    <ul>
+        <li>
+            <h3>
+                With a full URL (a full web address)
+            </h3>
+        </li>
+        <li>
+            <h3>
+                With a file path (like /js/)
+            </h3> 
+        </li>
+        <li>
+            <h3>
+                Without any path
+            </h3>
+        </li>
+    </ul>
+    <h3>This example uses a full URL to link to myScript.js:</h3>
+    <img src="static\image_for_js\12_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <h3>This example uses a file path to link to myScript.js:
+    </h3>
+    <img src="static\image_for_js\13_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <h3>This example uses no path to link to myScript.js:
+    </h3>
+    <img src="static\image_for_js\14_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a>
+   <hr>  <a href=intro_js><button class="btn">&lt; Previous</button></a>
+   <a href=output_js><button class="btn1">Next&gt;</button></a>
+</body>
+</html>

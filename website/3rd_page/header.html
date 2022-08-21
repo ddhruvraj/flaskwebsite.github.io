@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #303133;
+            overflow: hidden;
+        }
+        img{  margin: 10px;
+    width: 250px;
+    height: 100px;
+    float:right;
+    padding-top: 10px;
+    padding-right: 30px;
+        }
+        #btn{
+            float: right;
+            padding-top: 30px;
+        }
+        .font{
+            color:rgb(0, 0, 0) ;
+        }
+         
+  .left,
+  .central,
+  .right {
+    width: 30%;
+    display: inline-block;
+  
+  }
+  .content a {
+    color: white;
+    text-decoration: none;
+  }
+  .content p{
+      padding: 7px;
+  }
+  .central a {
+    font-size: 25px;
+  }
+  .main-content h2 {
+    color: blue;
+  }
+  .social a {
+    margin: 5px;
+    color: blue;
+    padding: 5px;
+    background: black;
+  }
+  .right .fa{
+      margin: 2px;
+      padding: 5px;
+      background: black;
+      color: blue;
+      border-radius: 50px;
+  }
+  .line{
+      width: 80%;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+  }
+  .red-line{
+      width: 20%;
+      height: 2px;
+      background: red;
+     
+  }
+  nav .logo{
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  nav{
+    height: 10px;
+    /* background: #063247; */
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  }
+  nav ul{
+    float: left;
+    margin-right: 30px;
+    padding-top: 30px;
+
+  }
+  nav ul li ul{
+      overflow: hidden;
+      margin-bottom: 100px;
+      margin-left: 120px;
+      width: 130px;
+      height: 100px;
+  }
+  nav ul li ul li{
+    padding-top: -10px;
+    margin-bottom: -5px;
+    margin-top: -23px;
+    padding: 7px;
+    margin-left: -10px;
+  }
+
+  .ul{
+    padding-top:-10px;
+    margin-left:140px;
+}
+ .li{
+     margin-left: 200px;
+ }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: rgb(255, 238, 82);
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    /* background: #063247; */
+    transition: .5s;
+    text-decoration: none;
+
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: blueviolet;
+  }
+  nav ul ul{
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 35px;
+    /* border: 3px solid #23dbdb; */
+    opacity: 0;
+    visibility: hidden;
+    background-color: #303133;
+    border-radius: 5px;
+    border: 1px solid white;
+
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    height: 30px;
+    display: list-item;
+    position: relative;
+    /* border: 1px solid #042331; */
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+    </style>
+</head>
+<body>
+   
+    <div id="header">
+      
+        <nav>
+			<img id="logo" src="C:\dhruvraj\website\login page\logo_img_new_-removebg-preview.png" alt="img">
+			<ul>
+			  <li>
+    				  <a href="#"><font size="+3">Tutorials</font>
+				  <!-- <i class="fas fa-caret-down"></i> -->
+				  </a>
+				  <ul class="ul">
+					 <li><a href="C:\dhruvraj\website\2nd_page\index1.html">HTML</a></li>
+					 <li><a href="C:\dhruvraj\website\3rd_page\index2.html">CSS</a></li>
+					 <li><a href="C:\dhruvraj\website\4th_page\index3.html">JAVA SCRIPT</a></li>		
+					 <li><a href="C:\dhruvraj\website\5th_page\index4.html">SQL</a></li>
+				  </ul>
+			   </li>
+			   <li class="li">
+				  <a href="#"><font size="+3">Videos</font>
+				  <!-- <i class="fas fa-caret-down"></i> -->
+				  </a>
+				  <ul>
+						   <li><a href="https://youtu.be/pQN-pnXPaVg">HTML</a></li>
+						   <li><a href="https://youtu.be/1Rs2ND1ryYc">CSS</a></li>
+						   <li><a href="https://youtu.be/PkZNo7MFNFg">JAVA SCRIPT</a></li>
+						   <li><a href="https://youtu.be/HXV3zeQKqGY">SQL</a></li>
+						
+				  </ul>
+			   </li>
+			 
+			</ul>
+		 </nav>
+
+
+    </div>
+</body>
+</html>

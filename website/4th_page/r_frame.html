@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <style>
+        /* #abc{
+            background-image: url('backimg_frame.jpg');
+            background-repeat: y-repeat;
+            background-size: cover;
+        }
+        .a{
+               width: 1260px;
+               height: 580px;
+            /* } 
+            body{
+                margin: 0;
+                padding: 0;
+                background: #313131;
+
+            }
+            .slider{
+                width: 800px;
+                height: 400px;
+                background: url('th(1).jpg');
+                background-repeat: no-repeat;
+               margin: 100px auto;
+               animation: slide 20s infinite;
+            }
+            @keyframes slide{
+                25%{
+                    background: url('th(2).jpg');
+                    background-repeat: no-repeat;
+                    width: 800px;
+                    height:500px ;
+                } 50%{
+                    background: url('th(3).jpg');
+                    background-repeat: no-repeat;
+                    width: 800px;
+                    height:500px ;
+                } 75%{
+                    background: url('th(4).jpg');        
+                    background-repeat: no-repeat;
+                    width: 800px;
+                    height:500px ;
+
+                } 100%{
+                    background: url('th(5).jpg');  
+                  background-repeat: no-repeat;
+                  width: 800px;
+                    height:500px ;
+
+                }
+            } */
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'poppins',sans-serif;
+            }
+            body{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: #000;
+            }
+            h2{
+                position: relative;
+                margin: 0;
+                font-size: 4em;
+                font-weight: 900;
+                color: #fff;
+                z-index: 1;
+                overflow: hidden;
+            }
+            h2:before{
+                content: '';
+                position: absolute;
+                left: 110%;
+                width: 120%;
+                height: 100%;
+                background: linear-gradient(90deg,transparent 0%,#000 5%,#000 100%);
+                animation: animate 5.5s linear forwards;
+                animation-delay: 2s;
+            }
+            @keyframes animate
+            {
+                0%
+                {
+                    left:110%
+                }
+            
+                100%
+                {
+                    left: -20%
+                }
+            }
+            h2 span{
+                color: #ff022c;
+            }
+            video{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 80%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 2;
+                pointer-events: none;
+                mix-blend-mode: screen;
+                margin-left: 180px;
+            }
+    </style>
+</head>
+<body >
+    <video src="particles.mp4" muted="" autoplay=""></video>
+    <h2>we<span>lc</span>ome to java<span>scr</span>ipt</h2>
+    <!-- <img class="a" src="welcome_img.png" alt=""> -->
+    
+</body>
+</html>
+      

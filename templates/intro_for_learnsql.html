@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu page</title>
+    <style>
+        #main{
+            background-image: url(static/backimg_frame.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(238, 141, 84);
+        }
+        .div{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(68, 175, 175);
+            color: black;
+            text-align:center;
+            padding-top: 10px;
+        }
+        .btn1{
+            float: right;
+            background-color:rgb(68, 175, 175);
+            width: 90px;
+            height: 40px;
+        }
+        .btn1:hover{
+            background-color: white;
+            color: black;
+        }
+        .btn3{
+            background-color:rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn3:hover{
+            background-color: white;
+            color: black;
+        }
+        .font{
+            color:rgb(68, 175, 175);
+        }
+
+        img{
+            height:100px ;
+            width: 700px;
+        }
+        .note3{
+            background-color: rgb(255, 182, 113);
+            color: black;
+            width: 1000px;
+            height : 100px;
+            border-radius: 10px;
+            font-size: 25px;
+          
+        
+            padding: 15px;    
+        }
+        .red{
+            color: white;
+        }
+    </style>
+</head>
+<body id="main">
+    <div class="div">   
+         <h1>SQL Introduction</h1>
+    </div>
+   <br>
+    <a href=syntax_sql><button class="btn1">Next &gt;</button></a><br><br><br>
+    <hr>
+   <center> <h2 class="font">SQL is a standard language for accessing and manipulating databases.</h2></center>
+   <hr> 
+   <br><br>
+    <h2 class="font">What is SQL?</h2>
+    <ul >
+        <li><h3>SQL stands for Structured Query Language
+        </h3></li>
+        <li><h3>SQL lets you access and manipulate databases</h3>
+        </li>
+        <li><h3>SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987</h3>
+        </li>
+       
+    </ul>
+    <hr>
+    <h2 class="font">What Can SQL do?
+    </h2>
+    <ul >
+        <li><h3>SQL can execute queries against a database
+        </h3></li>
+        <li><h3>SQL can retrieve data from a database
+        </h3> </li>
+        <li><h3>SQL can insert records in a database
+        </h3></li>
+        <li><h3>SQL can update records in a database
+        </h3></li>
+        <li><h3>SQL can delete records from a database
+        </h3> </li>
+        <li><h3>SQL can create new databases
+        </h3></li>
+        <li><h3>SQL can create new tables in a database
+        </h3></li>
+        <li><h3>SQL can create stored procedures in a database
+        </h3></li>
+        <li><h3>SQL can create views in a database
+        </h3> </li>
+        <li><h3>SQL can set permissions on tables, procedures, and views
+        </h3></li>
+       
+    </ul>
+    <hr>
+    <h2 class="font">SQL is a Standard - BUT....
+    </h2>
+    <ul>
+        <li><h3>
+            Although SQL is an ANSI/ISO standard, there are different versions of the SQL language.
+        </h3></li>
+        <li><h3>
+            However, to be compliant with the ANSI standard, they all support at least the major commands (such as <font class="red">SELECT</font>, <font class="red">UPDATE</font>, <font class="red">DELETE</font>, <font class="red">INSERT</font>, <font class="red">WHERE</font>) in a similar manner.
+        </h3></li>
+    </ul><br><br>
+    <div class="note3"> 
+        <p>
+            <font style="font-weight: bolder;">Note</font>: Most of the SQL database programs also have their own proprietary extensions in addition to the SQL standard!
+         </p>
+       
+    </div>
+    <br>
+    <hr>
+    <h2 class="font">Using SQL in Your Web Site        .
+    </h2>
+    <h3>To build a web site that shows data from a database, you will need:
+    </h3>
+    <ul>
+        <li><h3>
+            An RDBMS database program (i.e. MS Access, SQL Server, MySQL)
+        </h3></li>
+        <li><h3>
+            To use a server-side scripting language, like PHP or ASP
+        </h3></li>
+        <li><h3>
+            To use SQL to get the data you want
+        </h3></li>
+        <li><h3>
+            To use HTML / CSS to style the page
+        </h3></li>
+    </ul>
+    <hr>
+    <h2 class="font">RDBMS</h2>
+    <ul>
+        <li><h3>
+            RDBMS stands for Relational Database Management System.
+        </h3></li>
+        <li><h3>
+            RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.
+        </h3></li>
+        <li><h3>
+            The data in RDBMS is stored in database objects called tables. A table is a collection of related data entries and it consists of columns and rows.
+        </h3></li>
+    </ul>
+    <h3>Look at the "Customers" table:
+    </h3>
+    <img src="static\image_for_sql\1_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/">   
+     <button class="btn3">Try it Yourself</button>
+    </a>
+    <ul>
+        <li><h3>
+            Every table is broken up into smaller entities called fields. The fields in the Customers table consist of CustomerID, CustomerName, ContactName, Address, City, PostalCode and Country. A field is a column in a table that is designed to maintain specific information about every record in the table.
+        </h3></li>
+        <li><h3>
+            A record, also called a row, is each individual entry that exists in a table. For example, there are 91 records in the above Customers table. A record is a horizontal entity in a table.
+        </h3></li> 
+        <li><h3>
+            A column is a vertical entity in a table that contains all information associated with a specific field in a table.
+        </h3></li>
+    </ul>
+   <hr>  <a href=syntax_sql><button class="btn1">Next &gt;</button></a>
+</body>
+</html>

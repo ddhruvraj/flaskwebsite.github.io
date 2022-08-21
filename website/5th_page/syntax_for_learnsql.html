@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #main{
+            background-image: url(backimg_frame.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(238, 141, 84);
+        }
+        .div{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(68, 175, 175);
+            color: black;
+            text-align:center;
+            padding-top: 10px;
+        }
+        .font{
+            color:rgb(68, 175, 175);
+        }
+        .btn{
+            background-color:rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn1{
+            float: right;
+            background-color:rgb(68, 175, 175);
+            width: 90px;
+            height: 40px;
+        }
+        .btn3{
+            background-color:rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: black;
+        } .btn1:hover{
+            background-color: white;
+            color: black;
+        }
+     .btn3:hover{
+            background-color: white;
+            color: black;
+        }
+        #table{
+            border: 1px solid rgb(179, 255, 0);
+            color: violet;
+            font-size: 30px;
+        }
+        tr:hover{
+            background-color: rgb(79, 116, 117);
+        }
+        .table{
+            overflow: scroll;
+            height: 300px;
+            width: 800px;
+            
+        }
+        th{
+            color: hotpink;
+        }
+        img{
+            height:100px ;
+            width: 700px;
+        }
+        
+    </style>
+</head>
+<body id="main">
+    <div class="div">
+        <h1>
+            SQL Syntax
+        </h1>
+    </div><br>
+    <a href="intro.html"><button class="btn">&lt; Previous</button></a>
+    <a href="slct_statement.html"><button class="btn1">Next&gt;</button></a><br><br>
+    <hr>
+        <h2 class="font">
+            Database Tables
+        </h2><br>
+    <ul>
+        <li><h3>A database most often contains one or more tables. Each table is identified by a name (e.g. "Customers" or "Orders"). Tables contain records (rows) with data.
+        </h3></li>
+        <li><h3>In this tutorial we will use the well-known Northwind sample database (included in MS Access and MS SQL Server).
+        </h3></li>
+        <li><h3>Below is a selection from the "Customers" table:
+        </h3></li>
+    </ul>
+<div class="table">
+    <table id="table">
+        <tr >
+            <th>
+                CustomerID	
+            </th>
+            <th>
+                CustomerName	
+            </th>
+            <th>
+                ContactName
+            </th>
+            <th>
+                Address	
+            </th>
+            <th>
+                City 
+            </th>
+            <th>
+                PostalCode
+            </th>
+            <th>
+                Country
+            </th>
+        </tr><br>
+        <tr>
+            <td>
+                1	
+            </td>
+            <td>
+                Alfreds Futterkiste		
+            </td>
+            <td>
+                Maria Anders	
+            </td>
+            <td>
+                Obere Str. 57	
+            </td>
+            <td>
+                Berlin
+            </td>
+            <td>
+                12209	
+            </td>
+            <td>
+                Germany
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2	
+            </td>
+            <td>
+                Ana Trujillo Emparedados y helados			
+            </td>
+            <td>
+                Ana Trujillo		
+            </td>
+            <td>
+                Avda. de la Constitución 2222		
+            </td>
+            <td>
+                México D.F.	
+            </td>
+            <td>
+                05021	
+            </td>
+            <td>
+                Mexico
+            </td>
+        </tr>
+     <tr>
+        <td>
+            3	
+        </td>
+        <td>
+            Antonio Moreno Taquería	
+        </td>
+        <td>
+            Antonio Moreno			
+        </td>
+        <td>
+            Mataderos 2312			
+        </td>
+        <td>
+            México D.F.			
+        </td>
+        <td>
+            05023	
+        </td>
+        <td>
+            Mexico
+        </td>
+     </tr>
+     <tr>
+        <td>
+            4	
+        </td>
+        <td>
+            Around the Horn	
+        </td>
+        <td>
+            Thomas Hardy				
+        </td>
+        <td>
+            120 Hanover Sq.				
+        </td>
+        <td>
+            London				
+        </td>
+        <td>
+            WA1 1DP	
+        </td>
+        <td>
+            UK
+        </td>
+     </tr>
+     
+    </table>
+</div>
+<br>
+<ul>
+    <li><h3>
+        The table above contains five records (one for each customer) and seven columns (CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country).
+    </h3></li>
+</ul>
+    <hr>
+    <h2 class="font">SQL Statements
+    </h2>
+    <ul>
+        <li>
+            <h3>
+                Most of the actions you need to perform on a database are done with SQL statements.
+            </h3>
+        </li>
+        <li><h3>
+            The following SQL statement selects all the records in the "Customers" table:
+        </h3></li>
+    </ul>
+    <img src="2_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a><br>
+    <h3>
+        In this tutorial we will teach you all about the different SQL statements.
+    </h3>
+    <hr>
+    <h2 class="font">Keep in Mind That...
+
+    </h2>
+    <ul>
+        <li><h3>
+            SQL keywords are NOT case sensitive: select is the same as SELECT
+        </h3></li>
+    </ul>
+    <h3>
+        In this tutorial we will write all SQL keywords in upper-case.
+    </h3>
+    <hr>
+
+    <h2 class="font">
+        Semicolon after SQL Statements?
+    </h2>
+    <h3>
+        Some database systems require a semicolon at the end of each SQL statement.
+    </h3>
+    <h3>
+        Semicolon is the standard way to separate each SQL statement in database systems that allow more than one SQL statement to be executed in the same call to the server.
+    </h3>
+    <h3>
+        In this tutorial, we will use semicolon at the end of each SQL statement.
+    </h3>
+    <hr>
+    <h2 class="font">Some of The Most Important SQL Commands
+    </h2>
+    
+    <ul>
+        <li><h3><font style="color: white;">SELECT </font> - extracts data from a database
+
+        </h3></li>
+        <li><h3><font style="color: white;">UPDATE</font> - updates data in a database
+
+        </h3></li>
+        <li><h3><font style="color: white;">DELETE</font>-deletes data from a database
+
+        </h3></li>
+        <li><h3><font style="color: white;">INSERT INTO</font> - inserts new data into a database
+        </h3></li>
+        <li><h3><font style="color: white;">CREATE DATABASE</font>- creates a new database
+        </h3></li>
+        <li><h3><font style="color: white;">ALTER DATABASE</font>- modifies a database
+        </h3></li>
+        <li><h3><font style="color: white;">CREATE TABLE</font>- creates a new table
+        </h3></li>
+        <li><h3><font style="color: white;">ALTER TABLE</font>- modifies a table
+        </h3></li>
+        <li><h3><font style="color: white;">DROP TABLE</font>- deletes a table
+        </h3></li>
+        <li><h3><font style="color: white;">CREATE INDEX</font>- creates an index (search key)
+        </h3></li>
+        <li><h3><font style="color: white;">DROP INDEX</font>- deletes an index
+        </h3></li>
+    </ul>
+    <hr>  <a href="intro.html"><button class="btn">&lt; Previous</button></a>
+    <a href="slct_statement.html"><button class="btn1">Next&gt;</button></a>
+</body>
+</html>

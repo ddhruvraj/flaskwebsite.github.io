@@ -1,0 +1,272 @@
+
+font{
+    padding: 20px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn a:hover{
+    background: #303133;
+    color: rgb(195, 0, 255);
+}
+#logo{
+    margin: 10px;
+    width: 250px;
+    height: 100px;
+    float:right;
+    padding-top: 25px;
+    padding-right: 30px;
+}
+#header{
+    background-color: #303133;
+    border-radius: 15px;
+    color: white;
+
+}
+body{
+  background-color: white;
+}
+.btn{
+    float: right;
+    padding: 50px;
+    z-index: 5;
+}
+.btn1{
+    background-color: black;
+    color: yellow;
+    border-radius: 20px;
+    height:30px;
+    width: 120px;
+    font-size: 13px;
+   
+}
+.btn2{
+    background-color: rgb(0, 0, 0);
+    color: yellow;
+    border-radius: 20px;
+    height: 30px;
+    width: 120px;
+    font-size: 13px;
+    
+}
+
+.name{
+    /* text-align: center; */
+    letter-spacing: 1px;
+}
+.name1{
+    letter-spacing: 1px;
+
+}
+.html{
+background-color:rgb(184, 221, 149);
+border-radius: 15px;
+height: 350px;
+}
+.html1{
+    background-color:rgb(202, 138, 101);
+    border-radius: 15px;
+    height: 350px;
+    }
+    .html2{
+        background-color:rgb(189, 107, 243);
+        border-radius: 15px;
+        height: 350px;
+        }
+        .html3{
+            background-color:rgb(236, 172, 193);
+            border-radius: 15px;
+            height: 350px;
+            }
+.html_text{
+    padding-top: 50px;
+   padding-left: 100px;
+   font-size: 20px;
+   
+}
+.img{
+    float: right;
+    width: 500px;
+    height: 250px;
+    margin-top: -290px;
+    margin-right: 100px;
+    background-color: lemonchiffon;
+}
+.btn3{
+    background-color:#303133;
+    color: yellow;
+    border-radius: 15px;
+     width: 120px;
+     height: 35px;
+     float:right;
+     margin-top: -20px;
+     margin-right: 480px;
+ }
+ 
+
+    #footer{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border-radius: 15px;
+    }
+    #follow{
+       float: right;
+       color: rgb(255, 255, 255);
+       margin-top: -100px;
+    }
+    
+    .c_img{
+        
+        width: 20px;
+        height: 20px;
+        text-align: right;
+    }
+.review1{
+    width: 400px;
+    height: 200px;
+    float: right;
+}
+.review2{
+    width: 400px;
+    height: 200px;
+    
+}
+.review3{
+    width: 400px;
+    height: 200px;
+    margin-top: -210px;
+}
+ /* footer  style */
+ body {
+    font-family: "Poppins", sans-serif;
+  }
+  footer {
+    color: #d9d9d9;
+    width: 94%;
+    background-color: #303133;
+   
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+  
+  .left,
+  .central,
+  .right {
+    width: 30%;
+    display: inline-block;
+  
+  }
+  .content a {
+    color: white;
+    text-decoration: none;
+  }
+  .content p{
+      padding: 7px;
+  }
+  .central a {
+    font-size: 25px;
+  }
+  .main-content h2 {
+    color: blue;
+  }
+  .social a {
+    margin: 5px;
+    color: blue;
+    padding: 5px;
+    background: black;
+  }
+  .right .fa{
+      margin: 2px;
+      padding: 5px;
+      background: black;
+      color: blue;
+      border-radius: 50px;
+  }
+  .line{
+      width: 80%;
+      height: 2px;
+      background: black;
+      margin-bottom: 20px;
+  }
+  .red-line{
+      width: 20%;
+      height: 2px;
+      background: red;
+     
+  }
+  nav .logo{
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-left: 110px;
+  }
+  nav{
+    height: 170px;
+    /* background: #063247; */
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+    
+  }
+  nav ul{
+    float: left;
+    margin-right: 30px;
+    padding-top: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: rgb(255, 238, 82);
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    /* background: #063247; */
+    transition: .5s;
+    text-decoration: none;
+
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: blueviolet;
+  }
+  nav ul ul{
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 35px;
+    /* border: 3px solid #23dbdb; */
+    opacity: 0;
+    visibility: hidden;
+    background-color: #303133;
+    border-radius: 5px;
+    border: 1px solid white;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    /* border: 1px solid #042331; */
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #main{
+            background-image: url(static/backimg_frame.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(238, 141, 84);
+        }
+        .div{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(68, 175, 175);
+            color: black;
+            text-align:center;
+            padding-top: 10px;
+        }
+        .font{
+            color:rgb(68, 175, 175);
+        }
+        .btn{
+            background-color: rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn1{
+            float: right;
+            background-color: rgb(68, 175, 175);
+            width: 90px;
+            height: 40px;
+        }
+        .btn3{
+            background-color: rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn:hover{
+            background-color:white ;
+            color: black;
+        }
+        .btn1:hover{
+            background-color:white ;
+            color: black;
+        }
+        .btn3:hover{
+            background-color:white ;
+            color: black;
+        }
+        .note{
+            background-color: rgb(255, 182, 113);
+            color: black;
+            width: 900px;
+            height : 170px;
+            border-radius: 10px;
+            font-size: 25px;
+            margin-bottom: -10px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        .note2{
+            background-color: rgb(255, 182, 113);
+            color: black;
+            width: 900px;
+            height : 100px;
+            border-radius: 10px;
+            font-size: 25px;
+            margin-bottom: -10px;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body id="main">
+    <div class="div">
+        <h1>
+            How To Add CSS
+        </h1>
+    </div><br>
+    <a href=selector_css><button class="btn">&lt; Previous</button></a>
+    <a href=comments_css><button class="btn1">Next&gt;</button></a><br><br>
+    <hr>
+    <center>
+        <h2 class="font">
+            When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+        </h2>
+    </center>
+    <hr>
+    <h2 class="font">
+        Three Ways to Insert CSS
+    </h2>
+    <h3>
+        There are three ways of inserting a style sheet:
+    </h3>
+    <ul>
+        <li><h3>External CSS
+        </h3></li>
+        <li><h3>Internal CSS
+        </h3></li>
+        <li><h3>Inline CSS
+        </h3></li>
+    </ul>
+    <hr>
+    <h2 class="font">External CSS
+    </h2>
+    <h3>
+        With an external style sheet, you can change the look of an entire website by changing just one file!
+    </h3>
+    <h3>
+        Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt; element, inside the head section.
+    </h3>
+    <img src="static/10_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/html/3xmsxpx9u">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <h3>An external style sheet can be written in any text editor, and must be saved with a .css extension.
+    </h3>
+    <h3>The external .css file should not contain any HTML tags.
+    </h3>
+    <h3>Here is how the "mystyle.css" file looks:
+    </h3>
+    <img src="static/11_img.png" alt="">
+    <br>
+    <br>
+
+    <div class="note"> 
+        <p>
+            <font style="font-weight: bolder;"">Note</font>: Do not add a space between the property value and the unit:
+        </p>
+        <h3>Incorrect (space): margin-left: 20 px;<br>
+            Correct (nospace): margin-left: 20px;</h3>
+    </div>
+    <br>
+    <hr>
+    <h2 class="font">Internal CSS
+    </h2>
+    <h3>
+        An internal style sheet may be used if one single HTML page has a unique style.
+    </h3>
+    <h3>
+        The internal style is defined inside the &lt;style&gt; element, inside the head section.
+    </h3>
+    <img src="static/12_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/html/3xmsxrwuj">    <button class="btn3">Try it Yourself</button>
+    </a><br><br>
+    
+    <div class="note2"> 
+        <p>
+            <font style="font-weight: bolder;"">Tip</font>: An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
+        </p>
+       
+    </div>
+    <br>
+    <hr>
+    <h2 class="font">
+        Inline CSS
+    </h2>
+    
+        <h3>
+            An inline style may be used to apply a unique style for a single element.
+        </h3>
+        <h3>
+            To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+        </h3>
+        <img src="static/13_img.png" alt="">
+        <br><br>
+        <a href="https://onecompiler.com/html/3xmsxu7b3">    <button class="btn3">Try it Yourself</button>
+        </a>
+    <hr>
+    <h2 class="font">Multiple Style Sheets
+    </h2>
+    <h3>
+        If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
+    </h3>
+    <img src="static/14_img.png" alt=""><br><br>
+    <img src="static/15_img.png" alt=""><br><br>
+    <img src="static/16_img.png" alt=""><br><br>
+    <a href="https://onecompiler.com/html/3xmsxvs8c">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <br><br>
+    <img src="static/17_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/html/3xmsxxhkg">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>
+    <h2 class="font">Cascading Order
+    </h2>
+    <h3>
+        What style will be used when there is more than one style specified for an HTML element?
+    </h3>
+    <h3>All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+    </h3>
+    <ol>
+        <li><h3>Inline style (inside an HTML element)
+        </h3></li>
+        <li><h3>External and internal style sheets (in the head section)
+        </h3></li>
+        <li><h3>Browser default
+        </h3></li>
+    </ol>
+    <h3>So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+    </h3>
+   
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>  <a href=selector_css><button class="btn">&lt; Previous</button></a>
+    <a href=comments_css><button class="btn1">Next&gt;</button></a>
+</body>
+</html>

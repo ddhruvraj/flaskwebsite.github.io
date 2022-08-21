@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #main{
+            background-image: url(backimg_frame.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(238, 141, 84);
+        }
+        .div{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(68, 175, 175);
+            color: black;
+            text-align:center;
+            padding-top: 10px;
+        }
+        .font{
+            color:rgb(68, 175, 175);
+        }
+        .btn{
+            background-color:rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn1{
+            float: right;
+            background-color:rgb(68, 175, 175);
+            width: 90px;
+            height: 40px;
+        }
+        .btn3{
+            background-color:rgb(68, 175, 175);
+            width: 120px;
+            height: 40px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: black;
+        } .btn1:hover{
+            background-color: white;
+            color: black;
+        }
+     .btn3:hover{
+            background-color: white;
+            color: black;
+        }
+        #table{
+            border: 1px solid rgb(179, 255, 0);
+            color: violet;
+            font-size: 30px;
+        }
+        tr:hover{
+            background-color: rgb(79, 116, 117);
+        }
+        .table{
+            overflow: scroll;
+            height: 300px;
+            width: 800px;
+            
+        }
+        th{
+            color: hotpink;
+        }
+        img{
+            height:100px ;
+            width: 800px;
+        }
+    </style>
+</head>
+<body id="main">
+    <div class="div">
+        <h1>
+            SQL ORDER BY Keyword
+        </h1>
+    </div><br>
+    <a href="distinct_statement.html"><button class="btn">&lt; Previous</button></a>
+   <br><br>
+    <hr><br>
+        <h2 class="font">
+            The SQL ORDER BY Keyword
+        </h2>
+        <h3>
+            The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+        </h3>
+        <h3>
+            The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
+        </h3><hr>
+        <h2 class="font">
+            ORDER BY Syntax
+        </h2>
+        <img src="12_img.png" alt="">
+        <hr>
+       
+  
+    <h2 class="font">Demo Database
+    </h2>
+    <h3>
+        Below is a selection from the "Customers" table in the Northwind sample database:
+    </h3>
+
+    <div class="table">
+        <table id="table">
+            <tr >
+                <th>
+                    CustomerID	
+                </th>
+                <th>
+                    CustomerName	
+                </th>
+                <th>
+                    ContactName
+                </th>
+                <th>
+                    Address	
+                </th>
+                <th>
+                    City 
+                </th>
+                <th>
+                    PostalCode
+                </th>
+                <th>
+                    Country
+                </th>
+            </tr><br>
+            <tr>
+                <td>
+                    1	
+                </td>
+                <td>
+                    Alfreds Futterkiste		
+                </td>
+                <td>
+                    Maria Anders	
+                </td>
+                <td>
+                    Obere Str. 57	
+                </td>
+                <td>
+                    Berlin
+                </td>
+                <td>
+                    12209	
+                </td>
+                <td>
+                    Germany
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2	
+                </td>
+                <td>
+                    Ana Trujillo Emparedados y helados			
+                </td>
+                <td>
+                    Ana Trujillo		
+                </td>
+                <td>
+                    Avda. de la Constitución 2222		
+                </td>
+                <td>
+                    México D.F.	
+                </td>
+                <td>
+                    05021	
+                </td>
+                <td>
+                    Mexico
+                </td>
+            </tr>
+         <tr>
+            <td>
+                3	
+            </td>
+            <td>
+                Antonio Moreno Taquería	
+            </td>
+            <td>
+                Antonio Moreno			
+            </td>
+            <td>
+                Mataderos 2312			
+            </td>
+            <td>
+                México D.F.			
+            </td>
+            <td>
+                05023	
+            </td>
+            <td>
+                Mexico
+            </td>
+         </tr>
+         <tr>
+            <td>
+                4	
+            </td>
+            <td>
+                Around the Horn	
+            </td>
+            <td>
+                Thomas Hardy				
+            </td>
+            <td>
+                120 Hanover Sq.				
+            </td>
+            <td>
+                London				
+            </td>
+            <td>
+                WA1 1DP	
+            </td>
+            <td>
+                UK
+            </td>
+         </tr>
+         
+        </table>
+    </div>
+<hr>
+   
+    <h2 class="font">ORDER BY Example
+    </h2>
+    <h3>
+        The following SQL statement selects all customers from the "Customers" table, sorted by the "Country" column:
+    </h3>
+    <img src="13_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>
+    <h2 class="font">
+        ORDER BY DESC Example
+    </h2>
+    <h3>
+        The following SQL statement selects all customers from the "Customers" table, sorted DESCENDING by the "Country" column:
+    </h3>
+    <img src="14_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a><hr>
+   <h2 class="font">
+    ORDER BY Several Columns Example
+   </h2>
+   <h3>
+    The following SQL statement selects all customers from the "Customers" table, sorted by the "Country" and the "CustomerName" column. This means that it orders by Country, but if some rows have the same Country, it orders them by CustomerName:
+   </h3>
+    <img src="15_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>
+    <h2 class="font">
+        ORDER BY Several Columns Example 2
+    </h2>
+    <h3>
+        The following SQL statement selects all customers from the "Customers" table, sorted ascending by the "Country" and descending by the "CustomerName" column:
+    </h3>
+    <img src="16_img.png" alt="">
+    <br><br>
+    <a href="https://onecompiler.com/">    <button class="btn3">Try it Yourself</button>
+    </a>
+    <hr>    <a href="distinct_statement.html"><button class="btn">&lt; Previous</button></a>
+</body>
+</html>
